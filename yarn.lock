@@ -1339,6 +1339,14 @@
     chalk "^4.1.2"
     tslib "^2.4.0"
 
+"@docusaurus/logger@2.4.3":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@docusaurus/logger/-/logger-2.4.3.tgz#518bbc965fb4ebe8f1d0b14e5f4161607552d34c"
+  integrity sha512-Zxws7r3yLufk9xM1zq9ged0YHs65mlRmtsobnFkdZTxWXdTYlWWLWdKyNKAsVC+D7zg+pv2fGbyabdOnyZOM3w==
+  dependencies:
+    chalk "^4.1.2"
+    tslib "^2.4.0"
+
 "@docusaurus/mdx-loader@2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@docusaurus/mdx-loader/-/mdx-loader-2.2.0.tgz#fd558f429e5d9403d284bd4214e54d9768b041a0"
@@ -1499,7 +1507,7 @@
     "@docusaurus/theme-search-algolia" "2.2.0"
     "@docusaurus/types" "2.2.0"
 
-"@docusaurus/react-loadable@5.5.2", "react-loadable@npm:@docusaurus/react-loadable@5.5.2":
+"@docusaurus/react-loadable@5.5.2":
   version "5.5.2"
   resolved "https://registry.yarnpkg.com/@docusaurus/react-loadable/-/react-loadable-5.5.2.tgz#81aae0db81ecafbdaee3651f12804580868fa6ce"
   integrity sha512-A3dYjdBGuy0IGT+wyLIGIKLRE+sAk1iNk0f1HjNDysO7u8lhL4N3VEm+FAubmJbAztn94F7MxBTPmnixbiyFdQ==
@@ -1627,6 +1635,28 @@
   dependencies:
     "@docusaurus/logger" "2.2.0"
     "@svgr/webpack" "^6.2.1"
+    file-loader "^6.2.0"
+    fs-extra "^10.1.0"
+    github-slugger "^1.4.0"
+    globby "^11.1.0"
+    gray-matter "^4.0.3"
+    js-yaml "^4.1.0"
+    lodash "^4.17.21"
+    micromatch "^4.0.5"
+    resolve-pathname "^3.0.0"
+    shelljs "^0.8.5"
+    tslib "^2.4.0"
+    url-loader "^4.1.1"
+    webpack "^5.73.0"
+
+"@docusaurus/utils@2.4.3":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@docusaurus/utils/-/utils-2.4.3.tgz#52b000d989380a2125831b84e3a7327bef471e89"
+  integrity sha512-fKcXsjrD86Smxv8Pt0TBFqYieZZCPh4cbf9oszUq/AMhZn3ujwpKaVYZACPX8mmjtYx0JOgNx52CREBfiGQB4A==
+  dependencies:
+    "@docusaurus/logger" "2.4.3"
+    "@svgr/webpack" "^6.2.1"
+    escape-string-regexp "^4.0.0"
     file-loader "^6.2.0"
     fs-extra "^10.1.0"
     github-slugger "^1.4.0"
@@ -3155,6 +3185,22 @@ cosmiconfig@^7.0.0, cosmiconfig@^7.0.1:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
+create-docusaurus@^2.2.0:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/create-docusaurus/-/create-docusaurus-2.4.3.tgz#7898009b53d852e335358d2947058bc121085ede"
+  integrity sha512-tviQ374GC+HYKrPFU2IzM4jsVdJOs6t+Zw4rC+M18wUmG3kvNVt1xN4agefrXOBEWVzHZc1Xt0Qqw4iI36UFpA==
+  dependencies:
+    "@docusaurus/logger" "2.4.3"
+    "@docusaurus/utils" "2.4.3"
+    commander "^5.1.0"
+    fs-extra "^10.1.0"
+    lodash "^4.17.21"
+    prompts "^2.4.2"
+    semver "^7.3.7"
+    shelljs "^0.8.5"
+    supports-color "^9.2.2"
+    tslib "^2.4.0"
+
 cross-fetch@^3.1.5:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.5.tgz#e1389f44d9e7ba767907f7af8454787952ab534f"
@@ -4399,9 +4445,9 @@ http-parser-js@>=0.5.1:
   integrity sha512-SGeBX54F94Wgu5RH3X5jsDtf4eHyRogWX1XGT3b4HuW3tQPM4AaBzoUji/4AAJNXCEOWZ5O0DgZmJw1947gD5Q==
 
 http-proxy-middleware@^2.0.3:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/http-proxy-middleware/-/http-proxy-middleware-2.0.6.tgz#e1a4dd6979572c7ab5a4e4b55095d1f32a74963f"
-  integrity sha512-ya/UeJ6HVBYxrgYotAZo1KvPWlgB48kUJLDePFeneHsVujFaW5WNj2NgWCAE//B1Dl02BIfYlpNgBy8Kf8Rjmw==
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/http-proxy-middleware/-/http-proxy-middleware-2.0.10.tgz#b2df7b705203d7a8c269ac8450cf96b00c532f94"
+  integrity sha512-RKzRWNPxUZqbuk3BC5mGVJbBnWgr+diEnjJexIOytFbBzDy88Fbh/YvBr3DsNrl1jYAfjWfpATEv0NO35FDuPQ==
   dependencies:
     "@types/http-proxy" "^1.17.8"
     http-proxy "^1.18.1"
@@ -6108,6 +6154,14 @@ react-loadable-ssr-addon-v5-slorber@^1.0.1:
   dependencies:
     "@babel/runtime" "^7.10.3"
 
+"react-loadable@npm:@docusaurus/react-loadable@5.5.2":
+  version "5.5.2"
+  resolved "https://registry.yarnpkg.com/@docusaurus/react-loadable/-/react-loadable-5.5.2.tgz#81aae0db81ecafbdaee3651f12804580868fa6ce"
+  integrity sha512-A3dYjdBGuy0IGT+wyLIGIKLRE+sAk1iNk0f1HjNDysO7u8lhL4N3VEm+FAubmJbAztn94F7MxBTPmnixbiyFdQ==
+  dependencies:
+    "@types/react" "*"
+    prop-types "^15.6.2"
+
 react-router-config@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/react-router-config/-/react-router-config-5.1.1.tgz#0f4263d1a80c6b2dc7b9c1902c9526478194a988"
@@ -6913,6 +6967,11 @@ supports-color@^8.0.0:
   integrity sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==
   dependencies:
     has-flag "^4.0.0"
+
+supports-color@^9.2.2:
+  version "9.4.0"
+  resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-9.4.0.tgz#17bfcf686288f531db3dea3215510621ccb55954"
+  integrity sha512-VL+lNrEoIXww1coLPOmiEmK/0sGigko5COxI09KzHc2VJXJsQ37UaQ+8quuxjDeA7+KnLGTWRyOXSLLR2Wb4jw==
 
 supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
